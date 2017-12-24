@@ -19,6 +19,7 @@
   "dependencies": {
     "node-spotify-api": "^1.0.7",
     "omdb": "^0.8.0",
+    "omdbapi": "^2.0.1",
     "request": "^2.83.0"
   },
   "devDependencies": {
