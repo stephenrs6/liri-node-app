@@ -34,6 +34,11 @@ if (userInput === "spotify-this-song") {
     });
     var nodeArgs = process.argv;
     var songName = "";
+    if (process.argv[3] === undefined) {
+        songName = "The Sign Ace of Base";
+    }
+    
+
     for (var i = 3; i < nodeArgs.length; i++) {
         if (i > 3 && i < nodeArgs.length) {
             songName = songName + "+" + nodeArgs[i];
@@ -67,17 +72,19 @@ if (userInput === "spotify-this-song") {
 if (userInput === "movie-this") {
     var nodeArgs = process.argv;
     var movieName = "";
+    if (process.argv[3] !== undefined) {
 
-
-    for (var i = 3; i < nodeArgs.length; i++) {
-        if (i > 3 && i < nodeArgs.length) {
-            movieName = movieName + "+" + nodeArgs[i];
+        for (var i = 3; i < nodeArgs.length; i++) {
+            if (i > 3 && i < nodeArgs.length) {
+                movieName = movieName + "+" + nodeArgs[i];
+            }
+            else {
+                movieName += nodeArgs[i];
+            }
         }
-        else {
-            movieName += nodeArgs[i];
-        }
+    } else {
+        movieName = "Mr. Nobody";
     }
-
     var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
 
     request(queryUrl, function (error, response, body) {
