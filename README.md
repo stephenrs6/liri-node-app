@@ -2,6 +2,7 @@
 
 LIRI is like iPhone's SIRI, but for the termianl/bash window.
 Using Twitter, Spotify, and OMDB API
+
 It can:
 
 
