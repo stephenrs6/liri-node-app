@@ -5,12 +5,12 @@ Using Twitter, Spotify, and OMDB API, it can:
 
 
 
-node liri.js my-tweets
+1. node liri.js my-tweets
 This will show your last 20 tweets and when they were created at in your terminal/bash window.
 
 
 
-node liri.js spotify-this-song '<song name here>'
+2. node liri.js spotify-this-song '<song name here>'
 This will show the following information about the song in your terminal/bash window:
   
    * Artist(s)
@@ -21,7 +21,7 @@ This will show the following information about the song in your terminal/bash wi
 
 
 
-node liri.js movie-this '<movie name here>'
+3. node liri.js movie-this '<movie name here>'
 This will output the following information to your terminal/bash window:
 
    * Title of the movie.
