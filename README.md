@@ -1,9 +1,8 @@
 # liri-node-app
 
 LIRI is like iPhone's SIRI, but for the termianl/bash window.
-Using Twitter, Spotify, and OMDB API
+Using Twitter, Spotify, and OMDB API, it can:
 
-It can:
 
 
 node liri.js my-tweets
@@ -13,11 +12,12 @@ This will show your last 20 tweets and when they were created at in your termina
 
 node liri.js spotify-this-song '<song name here>'
 This will show the following information about the song in your terminal/bash window:
-Artist(s)
-The song's name
-A preview link of the song from Spotify
-The album that the song is from
-If no song is provided then your program will default to "The Sign" by Ace of Base.
+  
+   * Artist(s)
+   * The song's name
+   * A preview link of the song from Spotify
+   * The album that the song is from
+   * If no song is provided then your program will default to "The Sign" by Ace of Base.
 
 
 
